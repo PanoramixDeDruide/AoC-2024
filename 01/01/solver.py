@@ -1,0 +1,2 @@
+print(sum(list(map(lambda  x : abs(x[0] - x[1]), list(zip(sorted(list(map(lambda x : int(x.split()[0]), open("input", "r").readlines()))), sorted(list(map(lambda x : int(x.split()[1]), open("input", "r").readlines())))))))))
+print(sum(list(map(lambda x : x * list(map(lambda x :  int(x.split()[1]), open("input", "r").readlines())).count(x), list(map(lambda x :  int(x.split()[0]), open("input", "r").readlines()))))))
